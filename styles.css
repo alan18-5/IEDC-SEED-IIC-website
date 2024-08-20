@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 27%);
+    padding: 20px;
+    text-align: center;
+}
+#countdown {
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #FF5733;
+    text-align: center;
+}
+
+#countdown-timer {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#intro {
+    background: url("C:\Users\HP\Downloads\Copy of IIC_Black.jpg") no-repeat center center/cover;
+    color: black;
+    padding: 100px 20px;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.vision-mission div {
+    width: 45%;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .vision-mission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision-mission div {
+        width: 90%;
+    }
+}
+
